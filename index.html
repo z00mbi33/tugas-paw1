@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body onload="typeWriter()" class="d-flex flex-column min-vh-100">
+<div class="container" style="border-bottom: 1px solid gray;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand dark-color" href="#">Virgian Listianto</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</div>
+<div class="container pt-3">
+    <div class="row align-items-center flex-row-reverse">
+        <div class="col-lg-6">
+            <div class="about-text go-to">
+                <h3 class="dark-color">Virgian Listianto</h3>
+                <p id="typing"></p>
+                <div class="row about-list">
+                    <div class="col-md-6">
+                        <div class="media">
+                            <label>TTL</label>
+                            <p>Surabaya, 26 Maret 2001</p>
+                        </div>
+                        <div class="media">
+                            <label>Umur</label>
+                            <p>20 Tahun</p>
+                        </div>
+                        <div class="media">
+                            <label>Alamat</label>
+                            <p>Surabaya, Indonesia</p>
+                        </div>
+                        <div class="media">
+                            <h4><a href="#" class="text-decoration-none" title="click to see my gallery" data-bs-toggle="modal" data-bs-target="#galleryModal">Gallery</a></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="media">
+                            <label>E-mail</label>
+                            <p><a href="mailto:virgianlistianto@gmail.com" class="text-decoration-none">virgianlistianto@gmail.com</a></p>
+                        </div>
+                        <div class="media">
+                            <label>Phone</label>
+                            <p>085238069746</p>
+                        </div>
+                        <div class="media">
+                            <label>Hobi</label>
+                            <p>Film, Gaming, <a href="#" class="text-decoration-none" title="click to see my playlist" data-bs-toggle="modal" data-bs-target="#playlistModal">Musik</a></p>
+                        </div>
+                        <div class="media">
+                            <h4 class="dark-color">Follow Me</h4>
+                            <p class="pt-2"><a href="https://www.instagram.com/virgianl/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="about-avatar">
+                <img src="assets/gian.png">
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+</div>
+<div class="modal fade" id="playlistModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="playlistModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="playlistModalLabel">My Playlist</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://open.spotify.com/embed/playlist/63pDbCAkjpwKTOGlYaNYE0?theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="galleryModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="galleryModalLabel">My Gallery</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/me.jpg" class="rounded img-thumbnail">
+        <img src="assets/me1.jpg" class="rounded img-thumbnail">
+        <img src="assets/me2.jpg" class="rounded img-thumbnail">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- typing script -->
+<script>
+var i = 0;
+var txt = 'Saya adalah seorang mahasiswa S1 jurusan Sistem Informasi di Institut Teknologi Telkom Surabaya. Memiliki minat di bidang programming dan menguasai bahasa pemrograman seperti Python, dan Java.';
+var speed = 45;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typing").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+</body>
+</html>
